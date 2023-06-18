@@ -1,6 +1,6 @@
 # jscan-benchmark
 
-This module compares [jscan v2.0.0](github.com/romshark/jscan) to:
+This module compares [jscan v2.0.0](https://github.com/romshark/jscan) to:
 
 |package|version|
 |-|-|
