@@ -11,6 +11,7 @@ This module compares [jscan v2.0.0](https://github.com/romshark/jscan) to:
 |github.com/valyala/fastjson|[v1.6.4](https://github.com/valyala/fastjson/releases/tag/v1.6.4)|
 |github.com/goccy/go-json|[v0.10.2](https://github.com/goccy/go-json/releases/tag/v0.10.2)|
 |github.com/bytedance/sonic|[v1.9.1](https://github.com/bytedance/sonic/releases/tag/v1.9.1)|
+|github.com/ohler55/ojg|[v1.19.3](https://github.com/ohler55/ojg/releases/tag/v1.19.3)|
 
 ## Running the benchmarks
 

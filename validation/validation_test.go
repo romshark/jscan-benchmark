@@ -14,6 +14,7 @@ import (
 	gofasterjx "github.com/go-faster/jx"
 	goccygojson "github.com/goccy/go-json"
 	jsoniter "github.com/json-iterator/go"
+	ohler55ojgoj "github.com/ohler55/ojg/oj"
 	"github.com/stretchr/testify/require"
 	tidwallgjson "github.com/tidwall/gjson"
 	valyalafastjson "github.com/valyala/fastjson"
@@ -67,6 +68,10 @@ func TestValid(t *testing.T) {
 
 	t.Run("bytedance_sonic_", func(t *testing.T) {
 		require.True(t, bytedancesonic.ConfigFastest.Valid([]byte(j)))
+	})
+
+	t.Run("ohler55ojgoj", func(t *testing.T) {
+		require.NoError(t, ohler55ojgoj.Validate([]byte(j)))
 	})
 }
 
@@ -133,6 +138,12 @@ func BenchmarkValid(b *testing.B) {
 			b.Run("bytedance_sonic_", func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
 					GB = bytedancesonic.ConfigFastest.Valid(src)
+				}
+			})
+
+			b.Run("ohler55ojgoj", func(b *testing.B) {
+				for i := 0; i < b.N; i++ {
+					GB = ohler55ojgoj.Validate(src) != nil
 				}
 			})
 		})

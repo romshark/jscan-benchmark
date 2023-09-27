@@ -7,6 +7,7 @@ require (
 	github.com/go-faster/jx v1.0.0
 	github.com/goccy/go-json v0.10.2
 	github.com/json-iterator/go v1.1.12
+	github.com/ohler55/ojg v1.19.3
 	github.com/romshark/jscan/v2 v2.0.0
 	github.com/stretchr/testify v1.8.4
 	github.com/tidwall/gjson v1.14.4
