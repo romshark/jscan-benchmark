@@ -1,7 +1,6 @@
 package validation
 
 import (
-	"encoding/json"
 	"testing"
 
 	"github.com/romshark/jscan-benchmark/test"
@@ -93,7 +92,7 @@ func BenchmarkValid(b *testing.B) {
 
 			b.Run("encoding_json___", func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
-					GB = json.Valid(src)
+					GB = encodingjson.Valid(src)
 				}
 			})
 
