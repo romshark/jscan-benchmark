@@ -70,7 +70,7 @@ func TestValid(t *testing.T) {
 		require.True(t, bytedancesonic.ConfigFastest.Valid([]byte(j)))
 	})
 
-	t.Run("ohler55ojgoj", func(t *testing.T) {
+	t.Run("ohler55_ojg_oj__", func(t *testing.T) {
 		require.NoError(t, ohler55ojgoj.Validate([]byte(j)))
 	})
 }
@@ -141,7 +141,7 @@ func BenchmarkValid(b *testing.B) {
 				}
 			})
 
-			b.Run("ohler55ojgoj", func(b *testing.B) {
+			b.Run("ohler55_ojg_oj__", func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
 					GB = ohler55ojgoj.Validate(src) != nil
 				}
