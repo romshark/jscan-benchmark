@@ -4,18 +4,19 @@ This module compares [jscan v2.0.0](https://github.com/romshark/jscan) to:
 
 |package|version|
 |-|-|
-|pkg.go.dev/encoding/json|[go1.20.5](https://pkg.go.dev/encoding/json)|
-|github.com/go-faster/jx|[v1.0.0](https://github.com/go-faster/jx/releases/tag/v1.0.0)|
-|github.com/json-iterator/go|[v1.1.12](https://github.com/json-iterator/go/releases/tag/v1.1.12)|
-|github.com/tidwall/gjson|[v1.14.4](https://github.com/tidwall/gjson/releases/tag/v1.14.4)|
-|github.com/valyala/fastjson|[v1.6.4](https://github.com/valyala/fastjson/releases/tag/v1.6.4)|
-|github.com/goccy/go-json|[v0.10.2](https://github.com/goccy/go-json/releases/tag/v0.10.2)|
-|github.com/bytedance/sonic|[v1.9.1](https://github.com/bytedance/sonic/releases/tag/v1.9.1)|
-|github.com/ohler55/ojg|[v1.19.3](https://github.com/ohler55/ojg/releases/tag/v1.19.3)|
+|pkg.go.dev/encoding/json|[go1.21.1](https://pkg.go.dev/encoding/json)|
+|github.com/go-faster/jx|[1.0.0](https://github.com/go-faster/jx/releases/tag/v1.0.0)|
+|github.com/json-iterator/go|[1.1.12](https://github.com/json-iterator/go/releases/tag/v1.1.12)|
+|github.com/tidwall/gjson|[1.14.4](https://github.com/tidwall/gjson/releases/tag/v1.14.4)|
+|github.com/valyala/fastjson|[1.6.4](https://github.com/valyala/fastjson/releases/tag/v1.6.4)|
+|github.com/goccy/go-json|[0.10.2](https://github.com/goccy/go-json/releases/tag/v0.10.2)|
+|github.com/bytedance/sonic|[1.9.1](https://github.com/bytedance/sonic/releases/tag/v1.9.1)|
+|github.com/ohler55/ojg|[1.19.3](https://github.com/ohler55/ojg/releases/tag/v1.19.3)|
+|github.com/minio/simdjson-go|[0.4.5](https://github.com/minio/simdjson-go/releases/tag/v0.4.5)|
 
 ## Running the benchmarks
 
-[Install Go 1.20.5](https://go.dev/doc/install) and run using:
+[Install Go 1.21.1](https://go.dev/doc/install) and run using:
 
 ```
 go test -bench . -benchmem ./...

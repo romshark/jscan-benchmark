@@ -7,6 +7,7 @@ require (
 	github.com/go-faster/jx v1.0.0
 	github.com/goccy/go-json v0.10.2
 	github.com/json-iterator/go v1.1.12
+	github.com/minio/simdjson-go v0.4.5
 	github.com/ohler55/ojg v1.19.3
 	github.com/romshark/jscan/v2 v2.0.0
 	github.com/stretchr/testify v1.8.4
@@ -18,6 +19,7 @@ require (
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-faster/errors v0.6.1 // indirect
+	github.com/klauspost/compress v1.15.15 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect

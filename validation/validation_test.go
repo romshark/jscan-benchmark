@@ -13,6 +13,7 @@ import (
 	gofasterjx "github.com/go-faster/jx"
 	goccygojson "github.com/goccy/go-json"
 	jsoniter "github.com/json-iterator/go"
+	miniosimdjson "github.com/minio/simdjson-go"
 	ohler55ojgoj "github.com/ohler55/ojg/oj"
 	"github.com/stretchr/testify/require"
 	tidwallgjson "github.com/tidwall/gjson"
@@ -71,6 +72,14 @@ func TestValid(t *testing.T) {
 
 	t.Run("ohler55_ojg_oj__", func(t *testing.T) {
 		require.NoError(t, ohler55ojgoj.Validate([]byte(j)))
+	})
+
+	t.Run("minio_simdjson__", func(t *testing.T) {
+		if !miniosimdjson.SupportedCPU() {
+			t.Skip("unsupported CPU")
+		}
+		_, err := miniosimdjson.Parse([]byte(j), nil)
+		require.NoError(t, err)
 	})
 }
 
@@ -141,8 +150,20 @@ func BenchmarkValid(b *testing.B) {
 			})
 
 			b.Run("ohler55_ojg_oj__", func(b *testing.B) {
+				v := new(ohler55ojgoj.Validator)
+				b.ResetTimer()
 				for i := 0; i < b.N; i++ {
-					GB = ohler55ojgoj.Validate(src) != nil
+					GB = v.Validate(src) != nil
+				}
+			})
+
+			b.Run("minio_simdjson__", func(b *testing.B) {
+				if !miniosimdjson.SupportedCPU() {
+					b.Skip("unsupported CPU")
+				}
+				for i := 0; i < b.N; i++ {
+					_, err := miniosimdjson.Parse(src, nil)
+					GB = err != nil
 				}
 			})
 		})
