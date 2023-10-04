@@ -3,6 +3,7 @@ module github.com/romshark/jscan-benchmark
 go 1.20
 
 require (
+	github.com/Jeffail/gabs v1.4.0
 	github.com/bytedance/sonic v1.9.1
 	github.com/go-faster/jx v1.0.0
 	github.com/goccy/go-json v0.10.2

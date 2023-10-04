@@ -9,6 +9,7 @@ import (
 
 	encodingjson "encoding/json"
 
+	jeffailgabs "github.com/Jeffail/gabs"
 	bytedancesonic "github.com/bytedance/sonic"
 	gofasterjx "github.com/go-faster/jx"
 	goccygojson "github.com/goccy/go-json"
@@ -79,6 +80,11 @@ func TestValid(t *testing.T) {
 			t.Skip("unsupported CPU")
 		}
 		_, err := miniosimdjson.Parse([]byte(j), nil)
+		require.NoError(t, err)
+	})
+
+	t.Run("jeffail_gabs____", func(t *testing.T) {
+		_, err := jeffailgabs.ParseJSON([]byte(j))
 		require.NoError(t, err)
 	})
 }
@@ -163,6 +169,13 @@ func BenchmarkValid(b *testing.B) {
 				}
 				for i := 0; i < b.N; i++ {
 					_, err := miniosimdjson.Parse(src, nil)
+					GB = err != nil
+				}
+			})
+
+			b.Run("jeffail_gabs____", func(b *testing.B) {
+				for i := 0; i < b.N; i++ {
+					_, err := jeffailgabs.ParseJSON(src)
 					GB = err != nil
 				}
 			})

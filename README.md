@@ -13,6 +13,7 @@ This module compares [jscan v2.0.0](https://github.com/romshark/jscan) to:
 |github.com/bytedance/sonic|[1.9.1](https://github.com/bytedance/sonic/releases/tag/v1.9.1)|
 |github.com/ohler55/ojg|[1.19.3](https://github.com/ohler55/ojg/releases/tag/v1.19.3)|
 |github.com/minio/simdjson-go|[0.4.5](https://github.com/minio/simdjson-go/releases/tag/v0.4.5)|
+|github.com/Jeffail/gabs|[2.7.0](https://github.com/Jeffail/gabs/releases/tag/v2.7.0)|
 
 ## Running the benchmarks
 
