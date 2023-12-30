@@ -12,7 +12,7 @@ require (
 	github.com/json-iterator/go v1.1.12
 	github.com/minio/simdjson-go v0.4.5
 	github.com/ohler55/ojg v1.19.3
-	github.com/romshark/jscan/v2 v2.0.0
+	github.com/romshark/jscan/v2 v2.0.2
 	github.com/stretchr/testify v1.8.4
 	github.com/tidwall/gjson v1.14.4
 	github.com/valyala/fastjson v1.6.4
