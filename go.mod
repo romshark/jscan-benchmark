@@ -1,10 +1,12 @@
 module github.com/romshark/jscan-benchmark
 
-go 1.20
+go 1.21
+
+toolchain go1.21.5
 
 require (
 	github.com/Jeffail/gabs v1.4.0
-	github.com/bytedance/sonic v1.9.1
+	github.com/bytedance/sonic v1.10.2
 	github.com/go-faster/jx v1.0.0
 	github.com/goccy/go-json v0.10.2
 	github.com/json-iterator/go v1.1.12
@@ -17,7 +19,8 @@ require (
 )
 
 require (
-	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
+	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
+	github.com/chenzhuoyu/iasm v0.9.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-faster/errors v0.6.1 // indirect
 	github.com/klauspost/compress v1.15.15 // indirect

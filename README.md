@@ -10,14 +10,14 @@ This module compares [jscan v2.0.0](https://github.com/romshark/jscan) to:
 |github.com/tidwall/gjson|[1.14.4](https://github.com/tidwall/gjson/releases/tag/v1.14.4)|
 |github.com/valyala/fastjson|[1.6.4](https://github.com/valyala/fastjson/releases/tag/v1.6.4)|
 |github.com/goccy/go-json|[0.10.2](https://github.com/goccy/go-json/releases/tag/v0.10.2)|
-|github.com/bytedance/sonic|[1.9.1](https://github.com/bytedance/sonic/releases/tag/v1.9.1)|
+|github.com/bytedance/sonic|[1.10.2](https://github.com/bytedance/sonic/releases/tag/v1.10.2)|
 |github.com/ohler55/ojg|[1.19.3](https://github.com/ohler55/ojg/releases/tag/v1.19.3)|
 |github.com/minio/simdjson-go|[0.4.5](https://github.com/minio/simdjson-go/releases/tag/v0.4.5)|
 |github.com/Jeffail/gabs|[2.7.0](https://github.com/Jeffail/gabs/releases/tag/v2.7.0)|
 
 ## Running the benchmarks
 
-[Install Go 1.21.1](https://go.dev/doc/install) and run using:
+[Install Go 1.21.5](https://go.dev/doc/install) and run using:
 
 ```
 go test -bench . -benchmem ./...
