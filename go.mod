@@ -7,14 +7,14 @@ toolchain go1.21.5
 require (
 	github.com/Jeffail/gabs v1.4.0
 	github.com/bytedance/sonic v1.10.2
-	github.com/go-faster/jx v1.0.0
+	github.com/go-faster/jx v1.1.0
 	github.com/goccy/go-json v0.10.2
 	github.com/json-iterator/go v1.1.12
 	github.com/minio/simdjson-go v0.4.5
-	github.com/ohler55/ojg v1.19.3
+	github.com/ohler55/ojg v1.19.4
 	github.com/romshark/jscan/v2 v2.0.2
 	github.com/stretchr/testify v1.8.4
-	github.com/tidwall/gjson v1.14.4
+	github.com/tidwall/gjson v1.17.0
 	github.com/valyala/fastjson v1.6.4
 )
 
